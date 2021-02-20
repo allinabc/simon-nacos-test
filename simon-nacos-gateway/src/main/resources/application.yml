@@ -7,4 +7,17 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-
+    gateway:
+      routes:
+        - id: nacos-consumer
+          uri: lb://nacos-consumer #http://www.baidu.com
+          predicates:
+            - Path=/consumer/**
+          filters:
+            - RewritePath=/consumer/(?<segment>.*),/$\{segment}
+        - id: nacos-provider
+          uri: lb://nacos-provider #http://www.baidu.com
+          predicates:
+            - Path=/provider/**
+          filters:
+            - RewritePath=/provider/(?<segment>.*),/$\{segment}
