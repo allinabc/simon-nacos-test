@@ -14,5 +14,3 @@ spring:
         namespace: 10000
   profiles:
     active: test
-sample:
-  name: xiaoming
