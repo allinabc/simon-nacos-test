@@ -54,7 +54,11 @@
 			<version>2.2.7.RELEASE</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>me.xueyao</groupId>
+			<artifactId>simon-nacos-test</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>

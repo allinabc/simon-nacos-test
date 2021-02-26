@@ -69,6 +69,12 @@
             <version>1.18.16</version>
         </dependency>
 
+        <dependency>
+            <groupId>me.xueyao</groupId>
+            <artifactId>simon-nacos-test</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
 
     </dependencies>
 
